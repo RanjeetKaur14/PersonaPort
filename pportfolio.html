@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PersonaPort · Classic</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       BASE
+    ========================== */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Source Sans 3', sans-serif;
+      background: #fdfdfc;
+      color: #1e1e1e;
+      line-height: 1.65;
+    }
+
+    a {
+      color: #1e1e1e;
+      text-decoration: underline;
+    }
+
+    /* =========================
+       LAYOUT
+    ========================== */
+    .page {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 72px 28px;
+    }
+
+    section {
+      margin-bottom: 72px;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+    header {
+      margin-bottom: 64px;
+    }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 16px;
+    }
+
+    header p {
+      max-width: 650px;
+      font-size: 1rem;
+    }
+
+    /* =========================
+       SECTION TITLES
+    ========================== */
+    .section-title {
+      font-family: 'Merriweather', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+    }
+
+    /* =========================
+       CONTENT BLOCKS
+    ========================== */
+    .block {
+      margin-bottom: 28px;
+    }
+
+    .block h4 {
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .block span {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .block p {
+      margin-top: 8px;
+      max-width: 700px;
+    }
+
+    /* =========================
+       SKILLS
+    ========================== */
+    .skills ul {
+      columns: 2;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      margin-bottom: 6px;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+    footer {
+      border-top: 1px solid #ddd;
+      padding-top: 32px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      margin-right: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <!-- HEADER -->
+    <header>
+      <h1>Ranjeet Kaur</h1>
+      <h2>Software Engineer · Computer Science Student</h2>
+      <p>
+        Detail-oriented engineering student with a strong foundation in data
+        structures, object-oriented programming, and system-level thinking.
+      </p>
+    </header>
+
+    <!-- ABOUT -->
+    <section>
+      <h3 class="section-title">Profile</h3>
+      <p>
+        I am a second-year Computer Science student with a focus on building
+        reliable, maintainable software systems. I value clarity, correctness,
+        and thoughtful design in both code and user experience.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+      <h3 class="section-title">Technical Skills</h3>
+      <ul>
+        <li>C++, Java, JavaScript</li>
+        <li>Data Structures & Algorithms</li>
+        <li>Object-Oriented Design</li>
+        <li>React, Node.js</li>
+        <li>Git & Version Control</li>
+        <li>Basic System Design</li>
+      </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+      <h3 class="section-title">Projects</h3>
+
+      <div class="block">
+        <h4>PersonaPort</h4>
+        <span>Product Design · Frontend Engineering</span>
+        <p>
+          Designed and developed a portfolio generation platform that adapts
+          content across multiple professional presentation styles using a
+          unified data model.
+        </p>
+      </div>
+
+      <div class="block">
+        <h4>TaskBuddy</h4>
+        <span>Data Structures · C++</span>
+        <p>
+          Implemented a task management system emphasizing efficient data
+          handling and clear user workflows using core data structures.
+        </p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section>
+      <h3 class="section-title">Education</h3>
+
+      <div class="block">
+        <h4>B.Tech in Computer Science</h4>
+        <span>Jaypee Institute of Information Technology · 2024–2028</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer>
+      <a href="mailto:ranjeet@email.com">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </footer>
+
+  </main>
+</body>
+</html>

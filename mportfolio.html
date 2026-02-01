@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PersonaPort · Minimal</title>
+
+  <!-- Fonts (swap later via theme engine) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       RESET & BASE
+    ========================== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #111111;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* =========================
+       LAYOUT
+    ========================== */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    section {
+      margin-bottom: 96px;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .hero h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #555;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      font-size: 1rem;
+      margin-bottom: 32px;
+    }
+
+    .hero .cta {
+      font-weight: 500;
+      border-bottom: 1px solid #111;
+      padding-bottom: 4px;
+    }
+
+    /* =========================
+       SECTION TITLES
+    ========================== */
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+    .about p {
+      max-width: 700px;
+      margin-bottom: 16px;
+    }
+
+    /* =========================
+       SKILLS
+    ========================== */
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    .skill-group h4 {
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .skill-group ul {
+      list-style: none;
+    }
+
+    .skill-group li {
+      color: #555;
+      margin-bottom: 6px;
+    }
+
+    /* =========================
+       PROJECTS
+    ========================== */
+    .project {
+      margin-bottom: 40px;
+    }
+
+    .project h4 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .project p {
+      max-width: 700px;
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    .project span {
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    /* =========================
+       EXPERIENCE / EDUCATION
+    ========================== */
+    .item {
+      margin-bottom: 24px;
+    }
+
+    .item h4 {
+      font-weight: 500;
+    }
+
+    .item span {
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    /* =========================
+       FOOTER / CONTACT
+    ========================== */
+    footer {
+      padding-top: 40px;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      margin-right: 16px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Ranjeet Kaur</h1>
+      <h2>Software Engineer · Product Builder</h2>
+      <p>
+        I design and build thoughtful digital experiences with a focus on clarity,
+        usability, and scalable systems.
+      </p>
+      <a href="#projects" class="cta">View Projects</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about">
+      <h3 class="section-title">About</h3>
+      <p>
+        I’m a second-year engineering student passionate about building clean,
+        user-focused products. I enjoy working at the intersection of design and
+        development.
+      </p>
+      <p>
+        Currently exploring frontend systems, data structures, and product design.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills-list">
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <ul>
+            <li>C++</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Frameworks & Tools</h4>
+          <ul>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h4>Concepts</h4>
+          <ul>
+            <li>Data Structures</li>
+            <li>OOP</li>
+            <li>System Design Basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h3 class="section-title">Projects</h3>
+
+      <div class="project">
+        <h4>PersonaPort</h4>
+        <p>
+          A personality-driven portfolio generator that adapts content across
+          multiple professional styles.
+        </p>
+        <span>React · UX Design · Product Architecture</span>
+      </div>
+
+      <div class="project">
+        <h4>TaskBuddy</h4>
+        <p>
+          A task management system built using data structures with a focus on
+          efficiency and usability.
+        </p>
+        <span>C++ · Qt · Data Structures</span>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE / EDUCATION -->
+    <section>
+      <h3 class="section-title">Education</h3>
+
+      <div class="item">
+        <h4>B.Tech in Computer Science</h4>
+        <span>Jaypee Institute of Information Technology · 2024–2028</span>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer>
+      <a href="mailto:ranjeet@email.com">Email</a>
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+    </footer>
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+.template {
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* HERO */
+.hero {
+  background: var(--bg-hero);
+  color: var(--text-hero);
+  padding: 60px;
+  border-radius: 16px;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero .role {
+  opacity: 0.9;
+  margin-bottom: 10px;
+}
+
+.hero .summary {
+  max-width: 600px;
+}
+
+.hero .cta {
+  display: inline-block;
+  margin-top: 20px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ABOUT */
+.about {
+  background: var(--bg-skills);
+  color: var(--text-skills);
+  padding: 40px;
+  border-radius: 14px;
+  margin-bottom: 50px;
+}
+
+/* SKILLS */
+.skills {
+  padding: 20px 0 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.skill-group h4 {
+  margin-bottom: 8px;
+}
+
+/* PROJECTS */
+.projects {
+  background: var(--bg-projects);
+  color: var(--text-projects);
+  padding: 40px;
+  border-radius: 14px;
+  margin-bottom: 50px;
+}
+
+.project-card {
+  margin-bottom: 24px;
+}
+
+.project-card span {
+  opacity: 0.8;
+  font-size: 0.9rem;
+}
+
+/* EDUCATION */
+.education {
+  background: var(--muted);
+  padding: 30px;
+  border-radius: 14px;
+}
+
